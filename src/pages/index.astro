@@ -1,16 +1,74 @@
 ---
-
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import Fleche from "../components/Fleche.astro";
+import Accueil from "../components/Accueil.astro";
+import Portfolio from "../components/Portfolio.astro";
+import Parcours from "../components/Parcours.astro";
+import Savoirfaire from "../components/Savoirfaire.astro";
+import Competences from "../components/Competences.astro";
 ---
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Expletus+Sans:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Expletus+Sans:wght@500&family=Hind:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<Layout title="Portfolio - Léa Marchand" description="Je suis la metadescription">
+  <Header /> 
+<main>
+  <Accueil/>
+  <Portfolio/>
+  <Parcours/>
+  <Savoirfaire/>
+  <Competences/>
+</main>
+<Footer />
+</Layout>
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<style>
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 0%;
+  margin: 0%;}
+main {
+  flex: 1;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;}
+footer {
+  color: orange;
+  padding: 20px;}
+
+.hind-light {
+  font-family: "Hind", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.hind-regular {
+  font-family: "Hind", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.hind-medium {
+  font-family: "Hind", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.hind-semibold {
+  font-family: "Hind", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.hind-bold {
+  font-family: "Hind", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+</style>

@@ -1,0 +1,120 @@
+---
+---
+<section id="competences">
+    <div class="skills-container">
+      <p class="title">Mes compétences</p>
+      <p class="text">Applications acquises lors de mes années d'études. Les compétences se rapprochant de 0% ne sont pas maîtrisées et 100% étant une application relativement bien maîtrisée.</p>
+      <div class="skills-flex-container">
+          <div class="skills-column">
+            <div class="skill">
+                <div class="skill-name">Suite Adobe</div>
+                <div class="skill-bar" data-skill="65"><span class="skill-percentage">65%</span></div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">Visual Studio Code (astro)</div> 
+                <div class="skill-bar" data-skill="40"><span class="skill-percentage">40%</span></div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">Suite Microsoft</div>
+                <div class="skill-bar" data-skill="60"><span class="skill-percentage">60%</span></div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">Capcut</div>
+                <div class="skill-bar" data-skill="50"><span class="skill-percentage">50%</span></div>
+            </div>
+          </div>
+            <div class="skills-column">
+            <div class="skill">
+                <div class="skill-name">Suite Google</div>
+                <div class="skill-bar" data-skill="60"><span class="skill-percentage">60%</span></div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">Canva</div>
+                <div class="skill-bar" data-skill="80"><span class="skill-percentage">80%</span></div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">Figma</div>
+                <div class="skill-bar" data-skill="55"><span class="skill-percentage">55%</span></div>
+            </div>
+    </div>
+</section>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const skillBars = document.querySelectorAll('.skill-bar');
+      function animateSkillBars() {
+          skillBars.forEach(bar => {
+              const rect = bar.getBoundingClientRect();
+              if (rect.top < window.innerHeight && rect.bottom >= 0) {
+                  const skillLevel = bar.getAttribute('data-skill');
+                  bar.style.width = skillLevel + '%';}
+          });
+      }
+      window.addEventListener('scroll', animateSkillBars);
+  });
+</script>
+<style>
+    .title {
+      font-family: 'Expletus Sans', sans-serif;
+      font-size: xx-large;
+    }
+    .text { 
+    font-family: "Hind", sans-serif;
+  font-weight: 400;
+  font-style: normal;}
+    .skills-container {
+        width: auto;
+    }
+    .skill-name {
+        font-size: 18px;
+        color: #000;
+        margin-bottom: 5px;
+        font-family: "Hind", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+    .skill-bar {
+        position: relative;
+        width: 0%;
+        height: 20px;
+        background-color: #023047;
+        border-radius: 30px;
+        transition: width 1s ease-in-out;
+        margin-bottom: 20px;
+    }
+    .skill-bar:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 20px;
+        background-color: #023047;
+        width: 0%;
+        transition: width 1s ease-in-out;
+    }
+    .skill-percentage {
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 20px;
+        line-height: 20px;
+        padding: 0 5px;
+        background-color:#023047;
+        border-radius: 30px;
+        color: white;
+        font-family: "Hind", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+    }
+    .skills-flex-container {
+        display: flex;
+        justify-content: space-between;
+    }
+    .skills-column {
+        flex: 1;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .skills-column:last-child {
+        margin-right: 0;
+    }
+</style>

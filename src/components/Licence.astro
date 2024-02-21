@@ -1,0 +1,101 @@
+---
+---
+<section id="licence">
+  <div class="licence">
+    <div class="container py-6 to-blackblue texte">
+      <div class="heading">
+        <p class="title">Licence Digital</p>
+        <p class="text">Mes projets réalisés pour le moment au cours de ma licence Digital au sein de l'école My Digital School à Caen. Licence effectuée en alternance à Cotentin Sports Formations.</p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="case">
+        <img class="joel" src="/r-joel-filipe.jpg" alt="logo millet">
+        <p class="hidden-text">Illustration d'entraînement d'une reproduction d'un immeuble faite sur Illustrator reprenant le style de Joel Filipe.
+        <span class="hidden-text-toggle">Afficher plus</span>
+        </p>
+      </div>
+      <div class="case">
+        <img class="taaka" src="/taaka.png" alt="Taaka">
+        <p class="hidden-text">Taaka : à servit a tester nos connaissances sur Illustrator. Ce projet à été réalisé par une intervenante avec une cliente. C'était donc une reproduction d'un produit.
+        <span class="hidden-text-toggle">Afficher plus</span>
+        </p>
+      </div>
+      <div class="case">
+        <img class="graphic" src="/graphic-blend.png" alt="Boîte Graphic Blend">
+        <p class="hidden-text">Graphic Blend : Jeu fait en équipe de 3, réalisation d’un jeu sérieux pour l’english week. Le but étant de parler seulement en anglais et de réaliser un jeu dans cette langue sur le thème du marketing. Nous avons remasterisé le dobble  
+          <span class="hidden-text-toggle">Afficher plus</span>
+        </p>
+      </div>
+      <div class="case">
+        <video class="vid-box3" width="285" height="185" controls loop controls loading="lazy">
+    <source src="/video-graphic.mp4" type="video/mp4">Votre navigateur ne prend pas en charge la balise vidéo.
+    </video>
+        <p class="hidden-text">Graphic Blend : Vidéo liée au jeu juste à côté. Nous avons remasterisé le dobble, pour le faire en versio Marketing avec des pictogrammes d'applications ou d'outils marketing pour l'apprentissage. J'ai monté et tourner la vidéo moi-même. Quelques détails ne vont pas en raison d'un manque de temps.
+        <span class="hidden-text-toggle">Afficher plus</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const hiddenTexts = document.querySelectorAll(".hidden-text");
+
+    hiddenTexts.forEach((hiddenText) => {
+      const toggleButton = hiddenText.querySelector(".hidden-text-toggle");
+
+      toggleButton.addEventListener("click", function () {
+        hiddenText.classList.toggle("expanded");
+      });
+    });
+  });
+</script>
+
+<style>
+  .title {
+      font-family: 'Expletus Sans', sans-serif;
+      font-size: xx-large;
+    }
+  .text {
+      font-family: "Hind", sans-serif;
+      font-weight: 400;
+      font-style: normal;}
+  .hidden-text {
+      font-family: "Hind", sans-serif;
+      font-weight: 400;
+      font-style: normal;}
+  .licence {
+    padding-top: 50px;
+  }
+  .container {
+    gap: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;}
+  .case {
+    flex: 1;
+    gap: 10px;
+    padding: 10px;
+    border: 2px solid #c4c4c4;
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;}
+  .joel{
+    width: 50%;
+    margin-top: 8px;
+
+  }
+  .taaka{
+    width: 110%;
+    margin-top: 15px;
+    margin-bottom: 10px;}
+  .graphic{
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+</style>

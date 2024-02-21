@@ -1,0 +1,182 @@
+---
+---
+<section id="BTS">
+  <div class="BTS">
+    <div class="container py-6 to-blackblue texte">
+      <div class="heading">
+        <p class="title">BTS ERPC</p>
+        <p class="text">Quelques projets réalisés sur une péridode de deux ans, au cours de mon BTS Étude de Réalisation d'un Projet de Communication. Ces projets sont pour la plus part fictifs et réalisés en groupe ou solo (précisé dans les légendes).</p>
+      </div>
+    </div>
+      <div class="container">
+        <div class="case">
+          <img class="img-ojp" src="/r-affiche-ojp.jpg" alt="Affiche OJP">
+          <div class="hidden-text">
+            <p>Affiche : Cette affiche sert de promotion de la vente de jus de pomme, elle est désormais dans les commerces d’Ambrières-les-Vallées. Les passants sont maintenant avertis de l’ouverture de la vente et peuvent se rendre au lieu pour acheter les bibs. C'est un projet avec un client réel (APE d'Ambrières-les-Vallées). Affiche réalisé seule.
+Exigences client :
+Format pas trop grand 
+Mettre en avant le produit vendu 
+Pas d’indications de prix ni de date pour un rendu intemporel.</p>
+            <span class="hidden-text-toggle" onclick="toggleText()">Afficher plus</span>
+          </div>
+        </div>
+        <div class="case">
+          <video class="vid-ojp" width="250" height="150" controls loop controls loading="lazy">
+    <source src="/video-ojp.mp4" type="video/mp4">Votre navigateur ne prend pas en charge la balise vidéo.
+    </video>
+          <div class="hidden-text"> 
+            Vidéo animée : Cette vidéo fait la promotion de la vente de jus de pomme, elle explique fabrication du jus de pomme de A à Z. C'est un projet avec un client réel (APE d'Ambrières-les-Vallées). Vidéo réalisé seule.
+Celle-ci à été réalisée en suivant la nouvelle charte graphique du client et ses exigences. Cette charte à été réalisée en groupe de quatre personnes.
+Exigences client :
+Vidéo de moins de 2 minutes;
+Adaptable sur Facebook et un vidéo projecteur;
+Explications de la récolte à la vente;
+Garder un esprit enfantin;
+Pas d’indications de prix ni de date pour un rendu intemporel.
+            <span class="hidden-text-toggle">Afficher plus</span>
+          </div>
+        </div>
+        <div class="case">
+          <div class="orangina">
+          <img src="/r-orangina-recto.jpg" alt="Dessous de verres Orangina">
+          <img src="/r-orangina-verso.jpg" alt="Dessous de verres Orangina">
+          </div>
+          <p class="hidden-text">
+            Dessous de verres Orangina : Réaliser des dessous de verres de la marque Orangina, ceux-ci devant fonctionner à l’unité mais également en groupe. Projet fictif réalisé seul.
+            <span class="hidden-text-toggle">Afficher plus</span>
+          </p>
+        </div>
+        <div class="case">
+          <img src="/mockup-fly.png" alt="Flyer">
+          <p class="hidden-text">
+            Flyer Les amis de Franquin : Format A5 à fonds perdus. Le but de ce flyer est de promouvoir le bac pro RPIP du lycée.
+            Seul le texte à été fourni.
+            Produit fictif réalisé en duo.
+            <span class="hidden-text-toggle">Afficher plus</span>
+          </p>
+        </div>
+      </div>
+      <div class="container">
+        <div class="case">
+          <img src="/mockup-gulf.png" alt="Flyer Gulf">
+          <p class="hidden-text">
+            Flyer en format A5 en recto seul, projet solo et fictif pour s'entrapiner à faire de la mise en page et du traitement d'images en bichromies pour celles qui devaient être modifiées.
+            <span class="hidden-text-toggle">Afficher plus</span>
+          </p>
+        </div>
+        <div class="case">
+          <div class="vinci">
+          <img src="/mockup-vinci.png" alt="Flyer LDV">
+          </div>
+          <p class="hidden-text">
+            Flyer en format A5 recto-verso avec un pli accordéon. Flyer réalisé en duo, pour un projet réel de remplacer les flyers du lycée Léonard-de-Vinci mais n'a jamais abouti.
+            <span class="hidden-text-toggle">Afficher plus</span>
+          </p>
+        </div>
+        <div class="case">
+          <div class="chardon">
+          <img src="/dep-recto-chardon.png" alt="Flyer Chardon">
+          <img src="/dep-verso-chardon.png" alt="Flyer Chardon">
+          </div>
+          <p class="hidden-text">Flyer Bernard Chardon : Dépliant format carré 20 x 20 mm;
+Dépliant avec un plis croisé. C'est un projet fictif qui a eu pour but de nous préparer au projet avec un réel client qui a été fait plus tard dans ma deuxième année.
+          <span class="hidden-text-toggle">Afficher plus</span>
+          </p>
+        </div>
+        <div class="case">
+          <img src="/ballon.gif" alt="GIF Lakers">         
+          <p class="hidden-text">Gif Lakers réalisé sur After Effect.
+          <span class="hidden-text-toggle">Afficher plus</span>
+          </p>
+        </div>
+      </div>
+  </div>
+</section>
+
+  <script>
+      document.addEventListener("DOMContentLoaded", function () {
+    const hiddenTexts = document.querySelectorAll(".hidden-text");
+
+    hiddenTexts.forEach((hiddenText) => {
+      const toggleButton = hiddenText.querySelector(".hidden-text-toggle");
+
+      toggleButton.addEventListener("click", function () {
+        hiddenText.classList.toggle("expanded");
+      });
+    });
+  });
+
+  function toggleText() {
+    var hiddenText = document.getElementById('hiddenText');
+    hiddenText.classList.toggle('expanded');
+  }
+  </script>
+  
+  <style>
+    .title {
+      font-family: 'Expletus Sans', sans-serif;
+      font-size: xx-large;}
+    .text {
+      font-family: "Hind", sans-serif;
+      font-weight: 400;
+      font-style: normal;}
+    .hidden-text {
+      font-family: "Hind", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      overflow: hidden;
+      max-height: 100px;
+      transition: max-height 0.3s ease-in-out;}
+    .hidden-text.expanded {
+      max-height: 1000px;}
+    .BTS {
+      padding-top: 50px;}
+    .container {
+      gap: 20px;
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 30px;}
+    .case {
+      flex: 1;
+      gap: 10px;
+      padding: 10px;
+      border: 2px solid #c4c4c4;
+      border-radius: 10px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: center;}
+    .img-ojp {
+      border: 1px solid #000000;
+      max-width: 50%;
+    }
+    .vid-ojp {
+      margin-top: 15px;
+      margin-bottom: 30px;
+    }
+    .orangina {
+      display: flex;
+      justify-content: center;
+      max-width: 70%;
+      gap: 10px;
+      margin-top: 25px;
+      margin-bottom: 25px;}
+    .vinci {
+      display: flex;
+      justify-content: center;
+      margin-top: 25px;
+      margin-bottom: 20px;
+    }
+    .chardon {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      max-width: 70%;
+      margin-top: 25px;
+      margin-bottom: 30px;
+    }
+  
+    img {
+      max-width: 70%;}
+  </style>
+  

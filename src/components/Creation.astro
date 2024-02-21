@@ -1,0 +1,98 @@
+---
+---
+<section id="creation">
+    <div class="creation">
+      <div class="container py-6 to-blackblue texte">
+        <div class="heading">
+          <p class="title">Création de marques</p>
+          <p class="text">Logo ou marques que j'ai pu créer.</p>
+        </div>
+      </div>
+      <div class="container">
+        <div class="case">
+          <img class="img-abeille" src="/logo-abeille.png" alt="logo abeille">
+          <p class="hidden-text"> Logo réalisé pour un client souhaitant des étiquettes pour ses pots de miel. Je n'ai pas eu de contraintes ni d'indications, j'ai donc proposé plusieurs logo et nous avons ensuite avisé les détails. 
+            <span class="hidden-text-toggle">Afficher plus</span>
+          </p>
+        </div>
+        <div class="case">
+          <img class="img-poulpe" src="/logo-poulpe.png" alt="logo poulpe">
+          <p class="hidden-text">Logo Hexapus : Le client souhaitait un élément original (le poulpe) qui permet de le retenir plus facilement car n’est pas commun. Il est composé de 6 tentacules et non 8 car Hexapus était déjà prit.
+            Hexapus est un mélange entre un octopus et le mot hexa qui signifie six.
+            Des sneakers ont été mises au bout des tentacules car le but de ce logo est d’informer les clients du resell de sneakers sur Vinted.
+            Les couleurs ont été choisies par le client.            
+            <span class="hidden-text-toggle">Afficher plus</span>
+          </p>
+        </div>
+        <div class="case">
+          <img class="img-nemesis" src="/logo_nemesis.png" alt="logo nemesis">
+          <p class="hidden-text">Marque Némésis Omorfia : Logo réalisé pour une e-boutique : Némésis Omorfià
+            La cliente avait déjà un schéma de son logo, je l'ai donc retravaillé en supprimant des détails pour qu'il soit exploitable en petit.
+            La cliente voulant garder des détails, nous avons créer un second logo plus minimaliste, ce qui permettra d’être exploitable sur les étiquettes de vêtements ou autre qu'elle proposera sur sa boutique.
+            <span class="hidden-text-toggle">Afficher plus</span>
+          </p>
+        </div>
+       
+      </div>
+    </div>
+  </section>
+  
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const hiddenTexts = document.querySelectorAll(".hidden-text");
+  
+      hiddenTexts.forEach((hiddenText) => {
+        const toggleButton = hiddenText.querySelector(".hidden-text-toggle");
+  
+        toggleButton.addEventListener("click", function () {
+          hiddenText.classList.toggle("expanded");
+        });
+      });
+    });
+  </script>
+  
+  <style>
+    .title {
+      font-family: 'Expletus Sans', sans-serif;
+      font-size: xx-large;
+    }
+    .text {
+      font-family: "Hind", sans-serif;
+      font-weight: 400;
+      font-style: normal;}
+    .hidden-text {
+      font-family: "Hind", sans-serif;
+      font-weight: 400;
+      font-style: normal;}
+    .creation {
+      padding-top: 50px;
+    }
+    .container {
+      gap: 20px;
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 30px;}
+    .case {
+      flex: 1;
+      gap: 10px;
+      padding: 10px;
+      border: 2px solid #c4c4c4;
+      border-radius: 10px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: center;}
+    .img-abeille {
+      width: 130px;
+      height: auto;
+    }
+    .img-poulpe {
+      width: 150px;
+      height: auto;
+    }
+    .img-nemesis {
+      width: 255px;
+      height: auto;
+    }
+  </style>
+  

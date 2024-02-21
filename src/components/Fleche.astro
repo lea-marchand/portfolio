@@ -1,0 +1,43 @@
+---
+---
+
+  <div class="scroll-to-top-container">
+    <button id="scrollToTopButton">
+      <img src=/fleche.png alt="Retour en haut" />
+    </button>
+  </div>
+
+<style>
+
+.scroll-to-top-container {
+  position: fixed;
+  bottom: 125px;
+  right: 20px;
+  z-index: 999;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 1000;
+}
+
+img {
+  width: 30px; /* Ajustez la taille de l'image selon vos besoins */
+  height: auto; /* Ajustez la taille de l'image selon vos besoins */
+}
+
+</style>
+
+<script type="module">
+  const scrollToTopButton = document.getElementById("scrollToTopButton");
+
+  scrollToTopButton.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+</script>

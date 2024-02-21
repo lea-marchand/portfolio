@@ -1,0 +1,60 @@
+---
+---
+<div class="container">
+  <div class="cover">
+    PORTFOLIO EN COURS DE FINITION, QUELQUES ÉLÉMENTS NE SONT PAS OPÉRATIONNELS. MERCI DE VOTRE COMPRÉHENSION.
+    <p class="title">Léa Marchand</p>
+    <p class="sd-title">Master Expert Marketing Digital</p>
+    <p class="text">Étant actuellement dans une licence Digital, je souhaiterai poursuivre mes études. Pour cela je vais commencer un master Expert Marketing Digital. Je suis donc à la recherche d'une alternance, si vous êtes sur cette page, c'est que votre entreprise m'intéresse fortement. Autant pour mes études que pour le futur. Je vous invite à poursuivre le scroll pour en découvrir plus sur moi et mes réalisations.</p>
+  </div>
+  <img class="photo" src="/fond-site.jpg" alt="Photo profil">
+</div>
+
+<script>
+  window.addEventListener("scroll", function () {
+    var scrollPosition = window.scrollY;
+    var image = document.querySelector(".photo");
+    image.style.transform = "translateY(" + scrollPosition * 0.5 + "px)";
+  });
+</script>
+
+
+<style>
+  .container {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    height: 100vh;}
+  .cover {
+    padding: 20px;
+    color: white;
+    z-index: 1;}
+  .title {
+    font-size: 55px;
+    font-weight: bold;
+    overflow-x: hidden;
+    align-items: center;
+    font-family: 'Expletus Sans', sans-serif;}
+  .sd-title{
+    font-family: "Hind", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    overflow-x: hidden;
+    align-items: center;}
+  .text{
+    font-family: "Hind", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    overflow-x: hidden;
+    align-items: center;}
+  .photo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    object-fit: cover;
+    z-index: -2;
+    filter: contrast(70%);}
+</style>
